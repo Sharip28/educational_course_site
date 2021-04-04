@@ -1,0 +1,181 @@
+
+{% load static %}
+<html>
+	<head>
+		<title>Landed by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
+		<noscript><link rel="stylesheet" href="{% static 'assets/css/noscript.css'%}" /></noscript>
+	</head>
+	<body class="is-preload landing">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="index.html">Домой</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="#">Блог</a></li>
+							<li>
+								<a href="#">Учеба</a>
+								<ul>
+									<li><a href="left-sidebar.html">KPI</a></li>
+									<li><a href="right-sidebar.html">Trello</a></li>
+									<li><a href="no-sidebar.html">Лекции</a></li>
+									<li>
+										<a href="#">Расписание</a>
+										<ul>
+											<li><a href="#">Неделя 1</a></li>
+											<li><a href="#">Неделя 2</a></li>
+											<li><a href="#">Неделя 3</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="elements.html">Личная информация</a></li>
+							<li><a href="#" class="button primary">Зарегистрироваться</a></li>
+							<li><a href="#" class="button primary">Войти</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Banner -->
+				<section id="banner">
+					<div class="content">
+						<header>
+							<h2>Первый IT-Hub в Кыргызстане</h2>
+							<h3>Мы обучаем IT и digital профессиям. Разрабатываем сайты и приложения.<br />
+								Запускаем и помогаем запускать стартапы. Организовываем IT мероприятия.</h3>
+						</header>
+						<span class="image"><img src="{%static 'images/makers.jpg'%}" alt="" /></span>
+					</div>
+					<a href="#one" class="goto-next scrolly">Next</a>
+				</section>
+
+			<!-- One -->
+				<section id="one" class="spotlight style1 bottom">
+					<span class="image fit main"><img src="{%static 'images/banner1.jpg'%}" alt="" /></span>
+					<div class="content">
+						<div class="container">
+							<div class="row">
+								<h2>Научись программировать за 3 месяца,обучаясь 5 дней в неделю по 8 часов в день</h2>
+								<h3>20 часов. Интенсивней, увлекательней и в 3 раза быстрей других курсов в Бишкеке</h3>
+							</div>
+						</div>
+					</div>
+					<a href="#two" class="goto-next scrolly">Next</a>
+				</section>
+
+			<!-- Two -->
+				<section id="two" class="spotlight style2 right">
+					<span class="image fit main"><img src="{% static 'images/students2.jpg'%}" alt="" /></span>
+					<div class="content">
+
+							<h2>По окончанию курсов</h2>
+							<h3>Вы будете начинающим frontend/backend разработчиком готовым работать над проектами</h3>
+
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#three" class="goto-next scrolly">Next</a>
+				</section>
+
+			<!-- Three -->
+				<section id="three" class="spotlight style3 left">
+					<span class="image fit main bottom"><img src="{% static 'images/coding2.jpg'%}" alt="" /></span>
+					<div class="content">
+
+							<h2>У нас есть свой карьерный центр</h2>
+							<h3>в котором работают опытные карьерные консультанты. Вы пройдете тестовые собеседования и научитесь писать резюме. Лучших выпускников рекомендуем партнерам. Также гарантированно берем на стажировку до 5 человек</h3>
+
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#four" class="goto-next scrolly">Next</a>
+				</section>
+
+			<!-- Four -->
+				<section id="four" class="wrapper style1 special fade-up">
+					<div class="container">
+						<header class="major">
+							<h2>Развивающаяся экосистема</h2>
+						</header>
+						<div class="box alt">
+							<div class="row gtr-uniform">
+								<section class="col-4 col-6-medium col-12-xsmall">
+									<span class="icon solid alt major fa-chart-area"></span>
+									<h3>Интенсив</h3>
+									<p>5 дней,8 чавсов каждый деннь,560 часов за весь курс</p>
+								</section>
+								<section class="col-4 col-6-medium col-12-xsmall">
+									<span class="icon solid alt major fa-comment"></span>
+									<h3>Интерактивы</h3>
+									<p>Соревнования,конкурсы,интерактивы,игры в "мафию",хакатоны</p>
+								</section>
+								<section class="col-4 col-6-medium col-12-xsmall">
+									<span class="icon solid alt major fa-flask"></span>
+									<h3>Команда</h3>
+									<p>С вами будет работать команда из куратора группы,ментора и минимум 3 помощника ментора</p>
+								</section>
+								<section class="col-4 col-6-medium col-12-xsmall">
+									<span class="icon solid alt major fa-paper-plane"></span>
+									<h3>Видео-уроки</h3>
+									<p>В доступе будут видео-уроки по каждой теме.Вы можете пересматривать когда вам удобно</p>
+								</section>
+								<section class="col-4 col-6-medium col-12-xsmall">
+									<span class="icon solid alt major fa-file"></span>
+									<h3>Разборы с ментором</h3>
+									<p>Каждый день ментор разбирает с вами лекцию из видео-уроков</p>
+								</section>
+								<section class="col-4 col-6-medium col-12-xsmall">
+									<span class="icon solid alt major fa-lock"></span>
+									<h3>Community</h3>
+									<p>У нас больше 300 выпускников,более 20 компаний-партнеров и разработчиков.</p>
+								</section>
+							</div>
+						</div>
+						<footer class="major">
+							<ul class="actions special">
+								<li><a href="#" class="button">Подать заявку</a></li>
+							</ul>
+						</footer>
+					</div>
+				</section>
+
+			<!-- Five -->
+				<section id="five">
+					<div class="container">
+						<header>
+							<h2>Напишите нам</h2>
+							<p>По всем вопросам можете написать нам</p>
+						</header>
+						<form method="post" action="#" class="cta">
+							<div class="row gtr-uniform gtr-50">
+								<div class="col-8 col-12-xsmall"><input type="email" name="email" id="email" placeholder="оставьте ваш электронный адрес" /></div>
+								<div class="col-4 col-12-xsmall"><input type="submit" value="Отправить" class="fit primary" /></div>
+							</div>
+						</form>
+					</div>
+				</section>
+				<footer id="footer">
+					<h4>Адрес:Исанова 105/3,г.Бишкек </h4><h4>Телефон:+996 501 619 690</h4><h4>Электронная почта: makers@gmail.com</h4>
+				</footer>
+
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+			<script src="{% static 'assets/js/jquery.scrolly.min.js' %}"></script>
+			<script src="{% static 'assets/js/jquery.dropotron.min.js' %}"></script>
+			<script src="{% static 'assets/js/jquery.scrollex.min.js'  %}"></script>
+			<script src="{% static 'assets/js/browser.min.js' %}"></script>
+			<script src="{% static 'assets/js/breakpoints.min.js' %}"></script>
+			<script src="{% static 'assets/js/util.js' %}"></script>
+			<script src="{% static 'assets/js/main.js' %}"></script>
+
+	</body>
+</html>
