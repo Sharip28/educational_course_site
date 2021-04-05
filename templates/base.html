@@ -1,0 +1,59 @@
+
+{% load static %}
+<html>
+	<head>
+		<title>{% block title%} Makers {% endblock%}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
+		<noscript><link rel="stylesheet" href="{% static 'assets/css/noscript.css'%}" /></noscript>
+	</head>
+	<body class="is-preload landing">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="{% url 'home' %}">Домой</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="{% url 'blog' %}">Блог</a></li>
+							<li><a href="#">Trello</a></li>
+
+							<li>
+								<a href="{% url 'study' %}">Учеба</a>
+<!--								<ul>-->
+<!--									<li><a href="left-sidebar.html">KPI</a></li>-->
+<!--									<li><a href="blog.html">Лекции</a></li>-->
+<!--									<li>-->
+<!--										<a href="#">Расписание</a>-->
+<!--										<ul>-->
+<!--											<li><a href="#">Неделя 1</a></li>-->
+<!--											<li><a href="#">Неделя 2</a></li>-->
+<!--											<li><a href="#">Неделя 3</a></li>-->
+<!--										</ul>-->
+<!--									</li>-->
+<!--								</ul>-->
+							</li>
+							<li><a href="">Личная информация</a></li>
+							<li><a href="#" class="button primary">Зарегистрироваться</a></li>
+							<li><a href="#" class="button primary">Войти</a></li>
+						</ul>
+					</nav>
+				</header>
+            		</div>
+		<br>
+		<br>
+		<br>
+                {% block content%}{%endblock%}
+		<!-- Scripts -->
+			<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+			<script src="{% static 'assets/js/jquery.scrolly.min.js' %}"></script>
+			<script src="{% static 'assets/js/jquery.dropotron.min.js' %}"></script>
+			<script src="{% static 'assets/js/jquery.scrollex.min.js'  %}"></script>
+			<script src="{% static 'assets/js/browser.min.js' %}"></script>
+			<script src="{% static 'assets/js/breakpoints.min.js' %}"></script>
+			<script src="{% static 'assets/js/util.js' %}"></script>
+			<script src="{% static 'assets/js/main.js' %}"></script>
+
+	</body>
+</html>

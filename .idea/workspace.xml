@@ -3,14 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="57e5ee8a-78ab-49f2-92be-7a7382f09cc4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackathon/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/hackathon/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackathon/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/hackathon/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/left-sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/left-sidebar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,12 +70,20 @@
       <option name="project" value="LOCAL" />
       <updated>1617611661773</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="&quot;for mukha&quot;">
+      <created>1617634051806</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1617634051806</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&quot;created models&quot;" />
     <MESSAGE value="&quot;for beks&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;for beks&quot;" />
+    <MESSAGE value="&quot;for mukha&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;for mukha&quot;" />
   </component>
 </project>
