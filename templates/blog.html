@@ -1,0 +1,48 @@
+
+{%extends 'base.html'%}
+{% load static%}
+{%block content%}
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					{%for blog in blogs %}
+					<div class="container">
+						<header class="major">
+							<h2>{{blog}}</h2>
+						</header>
+						<!-- Content -->
+							<section id="content">
+								<a href="#" style="margin: 0 auto; width: 30vw;" class="image fit"><img src="{{blog.get_image}}" class="blog-img" alt="" /></a>
+								<p>Posted: {{blog.created}}</p>
+
+								<h3>Author: {{blog.user.username}}</h3>
+								<p> {{blog.description}}</p>
+
+							</section>
+
+					</div>
+					{%endfor%}
+				</div>
+{%endblock%}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="57e5ee8a-78ab-49f2-92be-7a7382f09cc4" name="Default Changelist" comment="" />
+    <list default="true" id="57e5ee8a-78ab-49f2-92be-7a7382f09cc4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/study.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/study.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,15 +15,29 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="1qXK3daYLS4vdty1pZhhHArJ6Mp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/static/images" />
@@ -40,6 +58,50 @@
       <option name="presentableId" value="Default" />
       <updated>1617220296803</updated>
     </task>
+    <task id="LOCAL-00001" summary="&quot;created models&quot;">
+      <created>1617602516505</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1617602516505</updated>
+    </task>
+    <task id="LOCAL-00002" summary="&quot;for beks&quot;">
+      <created>1617611661773</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1617611661773</updated>
+    </task>
+    <task id="LOCAL-00003" summary="&quot;for mukha&quot;">
+      <created>1617634051806</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1617634051806</updated>
+    </task>
+    <task id="LOCAL-00004" summary="&quot;for mukha2&quot;">
+      <created>1617634859073</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1617634859073</updated>
+    </task>
+    <task id="LOCAL-00005" summary="&quot;search,kpi and schedule&quot;">
+      <created>1617703435782</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1617703435782</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&quot;created models&quot;" />
+    <MESSAGE value="&quot;for beks&quot;" />
+    <MESSAGE value="&quot;for mukha&quot;" />
+    <MESSAGE value="&quot;for mukha2&quot;" />
+    <MESSAGE value="&quot;search,kpi and schedule&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;search,kpi and schedule&quot;" />
   </component>
 </project>

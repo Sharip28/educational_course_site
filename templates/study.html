@@ -1,0 +1,128 @@
+{%extends 'base.html'%}
+{% load static%}
+{%block content%}
+
+<!--	<div class="col-6 col-12-xsmall" method ="get">-->
+<!--		<input type="text" name="name" id="name" value="" placeholder="Search" />-->
+<!--	</div>-->
+
+<section id="search" class="alt">
+			<form method="get" action="{% url 'study' %}">
+				<input type="text" name="q" id="query" placeholder="Search" />
+			</form>
+		</section>
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					{% for week in weeks %}
+					<div class="container">
+						<header class="major">
+							<h2>{{week.name}}</h2>
+						</header>
+						<!-- Content -->
+							<section id="content">
+								<h3>{{week.description}}</h3>
+<!--							<a href="{% url 'kpi' week.slug %}" class="button primary fit">KPI</a>-->
+							<a href="{{ week.get_kpi }}"  target="_blank" class="button primary fit">KPI</a>
+							<a href="{{ week.get_schedule }}"  target="_blank" class="button fit">Schedule</a>
+
+
+
+							</section>
+
+					</div>
+					<br>
+
+					{%endfor%}
+				</div>
+
+<section>
+	<nav aria-label="...">
+	  <ul class="pagination pagination-lg">
+		  {% if page_obj.has_previous %}
+		  <li class="button" class="page-item"><a class="page-link" href="{% url 'study' %}?page={{page_obj.previous_page_number}}">{{page_obj.previous_page_number}}</a></li>
+			{% endif %}
+		<li class="button" class="page-item active" aria-current="page">
+		  <span class="page-link">{{ page_obj.number }}</span>
+		</li>
+{% if page_obj.has_next %}
+		<li class="button" class="page-item"><a class="page-link" href="{% url 'study' %}?page={{page_obj.next_page_number}}">{{page_obj.next_page_number}}</a></li>
+	 		{% endif %}
+	  </ul>
+	</nav>
+</section>
+{%endblock%}
+
+<!--{% load static %}-->
+<!--<html>-->
+<!--	<head>-->
+<!--		<title>{% block title%} Makers {% endblock%}</title>-->
+<!--		<meta charset="utf-8" />-->
+<!--		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />-->
+<!--		<link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />-->
+<!--		<noscript><link rel="stylesheet" href="{% static 'assets/css/noscript.css'%}" /></noscript>-->
+<!--	</head>-->
+<!--	<body class="is-preload landing">-->
+<!--		<div id="page-wrapper">-->
+
+<!--			&lt;!&ndash; Header &ndash;&gt;-->
+<!--				<header id="header">-->
+<!--					<h1 id="logo"><a href="{% url 'home' %}">Домой</a></h1>-->
+<!--					<nav id="nav">-->
+<!--						<ul>-->
+
+<!--							<li><a href="{% url 'blog' %}">Блог</a></li>-->
+<!--							<li><a href="#">Trello</a></li>-->
+<!--							{% if request.user.is_authenticated %}-->
+<!--							<li><a href="{% url 'study' %}">Учеба</a></li>-->
+<!--							<li><a href="{% url 'profile' %}">Мой профиль</a></li>-->
+<!--							<li><a href="{% url 'logout' %}" class="button primary">Выйти</a></li>-->
+<!--							{% else %}-->
+<!--							<li><a href="{% url 'register' %}" class="button primary">Зарегистрироваться</a></li>-->
+<!--							<li><a href="{% url 'login' %}" class="button primary">Войти</a></li>-->
+<!--							{% endif %}-->
+
+<!--						</ul>-->
+<!--					</nav>-->
+<!--				</header>-->
+<!--            		</div>-->
+<!--&lt;!&ndash;<style>&ndash;&gt;-->
+<!--&lt;!&ndash;    body {&ndash;&gt;-->
+<!--&lt;!&ndash;    background: url({% static 'images/background.jpg' %}) 100%;&ndash;&gt;-->
+
+<!--&lt;!&ndash;    }&ndash;&gt;-->
+<!--&lt;!&ndash;</style>&ndash;&gt;-->
+<!--		<br>-->
+<!--		<br>-->
+<!--		<br>-->
+<!--<ul class="list-group">-->
+<!--		{%for week in weeks%}-->
+<!--		<div class="card" style="width: 18rem;">-->
+<!--		  <div class="card-body">-->
+<!--			<h5 class="card-title">{{week.name}}</h5>-->
+<!--			<p class="card-text">{{week.description}}</p>-->
+<!--			<a href="{% url 'py10kpiweek1' %}" class="card-link">Перейти</a>-->
+<!--		  </div>-->
+<!--		</div>-->
+<!--		{% endfor %}-->
+<!--</ul>-->
+<!--</ul>-->
+
+
+<!--		<br>-->
+<!--		<br>-->
+<!--		<br>-->
+<!--		<br>-->
+<!--		<br>-->
+<!--		<br>-->
+<!--		&lt;!&ndash; Scripts &ndash;&gt;-->
+<!--			<script src="{% static 'assets/js/jquery.min.js' %}"></script>-->
+<!--			<script src="{% static 'assets/js/jquery.scrolly.min.js' %}"></script>-->
+<!--			<script src="{% static 'assets/js/jquery.dropotron.min.js' %}"></script>-->
+<!--			<script src="{% static 'assets/js/jquery.scrollex.min.js'  %}"></script>-->
+<!--			<script src="{% static 'assets/js/browser.min.js' %}"></script>-->
+<!--			<script src="{% static 'assets/js/breakpoints.min.js' %}"></script>-->
+<!--			<script src="{% static 'assets/js/util.js' %}"></script>-->
+<!--			<script src="{% static 'assets/js/main.js' %}"></script>-->
+
+<!--	</body>-->
+<!--</html>-->
