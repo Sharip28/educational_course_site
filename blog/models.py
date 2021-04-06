@@ -17,6 +17,12 @@ class Blog(models.Model):
     def get_image(self):
         return self.images.first().image.url
 
+    def get_absolute_url(self):
+        from django.urls import reverse
+        return reverse('blog', )
+
+
+
 class Image(models.Model):
     image = models.ImageField(upload_to='blogs')
     blog = models.ForeignKey(Blog,on_delete=models.CASCADE,related_name='images')
