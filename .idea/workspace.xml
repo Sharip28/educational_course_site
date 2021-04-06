@@ -3,6 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="57e5ee8a-78ab-49f2-92be-7a7382f09cc4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hackathon/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/hackathon/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hackathon/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/hackathon/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/account/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account/registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/study.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/study.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +52,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/project/no-sidebar.html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/images" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -77,13 +91,21 @@
       <option name="project" value="LOCAL" />
       <updated>1617634051806</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="&quot;for mukha2&quot;">
+      <created>1617634859073</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1617634859073</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&quot;created models&quot;" />
     <MESSAGE value="&quot;for beks&quot;" />
     <MESSAGE value="&quot;for mukha&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;for mukha&quot;" />
+    <MESSAGE value="&quot;for mukha2&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;for mukha2&quot;" />
   </component>
 </project>

@@ -1,0 +1,28 @@
+{%extends 'base.html'%}
+{% load static%}
+{%block content%}
+
+<section id="search" class="alt">
+    <form method="get" action="{% url 'study' %}">
+        <input type="text" name="q" id="query" placeholder="Search" />
+    </form>
+</section>
+<h1>Search results</h1>
+    <div id="main" class="wrapper style1">
+        {% for week in weeks %}
+        <div class="container">
+            <header class="major">
+                <h2>{{week.name}}</h2>
+            </header>
+            <!-- Content -->
+                <section id="content">
+                    <h3>{{week.description}}</h3>
+<!--							<a href="{% url 'kpi' week.slug %}" class="button primary fit">KPI</a>-->
+                <a href="{{ week.get_kpi }}"  target="_blank" class="button primary fit">KPI</a>
+                <a href="{{ week.get_schedule }}"  target="_blank" class="button fit">Schedule</a>
+                </section>
+
+        </div>
+        {%endfor%}
+    </div>
+{%endblock%}

@@ -1,8 +1,18 @@
 {%extends 'base.html'%}
 {% load static%}
 {%block content%}
+
 				<section id="banner">
 					<div class="content">
+							{% if messages %}
+									<ul class="messages">
+										{% for message in messages %}
+										<div class="alert alert-success" role="alert">
+											<h2>{{message}}</h2>
+								</div>
+										{% endfor %}
+										</ul>
+						{% endif %}
 						<header>
 							<h2>Первый IT-Hub в Кыргызстане</h2>
 							<h3>Мы обучаем IT и digital профессиям. Разрабатываем сайты и приложения.<br />

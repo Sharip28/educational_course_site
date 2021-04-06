@@ -1,0 +1,26 @@
+ {%extends 'base.html'%}
+{% load static%}
+{%block content%}
+
+
+	<div id="main" class="wrapper style1">
+
+        <div class="container">
+            <header class="major">
+                <h2>{{request.user.username}}</h2>
+            </header>
+            <!-- Content -->
+                <section id="content">
+                    <a href="#" style="margin: 0 auto; width: 25vw;" class="image fit"><img src="{{request.user.image.url}}" class="blog-img" alt="" /></a>
+                    <ul>
+                        <li><h2>{{request.user}}</h2></li>
+                        <li><h2>Joined:{{request.user.date_joined}}</h2></li>
+                        <li><h2>Course:{{request.user.group|title}}</h2></li>
+                    </ul>
+
+                </section>
+
+        </div>
+
+    </div>
+{%endblock%}

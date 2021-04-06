@@ -6,11 +6,22 @@ from account.models import User
 
 class Week(models.Model):
     slug = models.SlugField(primary_key=True,max_length=150)
+
     name = models.CharField(max_length=150)
-    decription = models.CharField(max_length=150)
-    kpi = models.FileField(blank=True,upload_to='kpi')
-    schedule = models.FileField(blank=True,upload_to='schedule')
-    user = models.ForeignKey(User,on_delete=models.CASCADE,related_name='week')
+    description = models.CharField(max_length=150)
+    kpi = models.TextField(blank=True)
+    schedule = models.TextField(blank=True)
+    user = models.ForeignKey(User,on_delete=models.CASCADE,related_name='weeks')
+    class Meta:
+        ordering =['name']
 
     def __str__(self):
         return self.slug
+
+    @property
+    def get_kpi(self):
+        return self.kpi
+
+    @property
+    def get_schedule(self):
+        return self.schedule

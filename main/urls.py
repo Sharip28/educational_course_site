@@ -5,6 +5,7 @@ from .views import *
 
 urlpatterns = [
     path('',index,name='home'),
-    path('study/',study,name='study'),
+    path('study/',StudyPageView.as_view(),name='study'),
+    path('kpi/<str:slug>/', kpi,name='kpi')
 
 ]

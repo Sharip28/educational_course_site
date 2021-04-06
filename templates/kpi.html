@@ -1,5 +1,5 @@
-
 {% load static %}
+{% load media %}
 <html>
 	<head>
 		<title>{% block title%} Makers {% endblock%}</title>
@@ -14,8 +14,7 @@
 			<!-- Header -->
 				<header id="header">
 					<h1 id="logo"><a href="{% url 'home' %}">Домой</a></h1>
-
-<nav id="nav">
+					<nav id="nav">
 						<ul>
 
 							<li><a href="{% url 'blog' %}">Блог</a></li>
@@ -51,8 +50,13 @@
 		<br>
 		<br>
 
-
-                {% block content%}{%endblock%}
+		<embed src="{% media 'kpi/kpi.get_pdf' %}" width="1800" height="1000" type="application/pdf">
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
 		<!-- Scripts -->
 			<script src="{% static 'assets/js/jquery.min.js' %}"></script>
 			<script src="{% static 'assets/js/jquery.scrolly.min.js' %}"></script>

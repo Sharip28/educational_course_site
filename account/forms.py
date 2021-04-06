@@ -13,8 +13,21 @@ class RegistrationForm(forms.ModelForm):
 
     class Meta:
         model = User
-        fields = ('username','email','password','password_confirmation','firstname',
-                  'last_name','image','choices')
+        fields = ('username','email','password','password_confirmation','first_name',
+                  'last_name','image','group')
+
+
+    def clean_username(self):
+        username = self.cleaned_data.get('username')
+        if User.objects.filter(username=username).exists():
+            raise forms.ValidationError('User with that username already exists')
+        return username
+
+    def clean_email(self):
+        email = self.cleaned_data.get('email')
+        if User.objects.filter(email=email).exists():
+            raise forms.ValidationError('email already exists')
+        return email
 
     def clean(self):
         data = self.cleaned_data
