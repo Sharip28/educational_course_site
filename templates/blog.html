@@ -1,28 +1,35 @@
-
 {%extends 'base.html'%}
 {% load static%}
 {%block content%}
+<a href="{% url 'add_blog' %}" class="button primary">Add post </a>
+<a href="#" class="button primary">New posts </a>
 
-			<!-- Main -->
-				<div id="main" class="wrapper style1">
-					{%for blog in blogs %}
-					<div class="container">
-						<header class="major">
-							<h2>{{blog}}</h2>
-						</header>
-						<!-- Content -->
-							<section id="content">
-								<a href="#" style="margin: 0 auto; width: 30vw;" class="image fit"><img src="{{blog.get_image}}" class="blog-img" alt="" /></a>
-								<p>Posted: {{blog.created}}</p>
+      <!-- Main -->
+        <div id="main" class="wrapper style1">
+          {%for blog in blogs %}
+          <div class="container">
+            <header class="major">
+              <h2>{{blog}}</h2>
+            </header>
+            <!-- Content -->
+              <section id="content">
+                <a href="#" style="margin: 0 auto; width: 25vw;" class="image fit"><img src="{{blog.get_image}}" class="blog-img" alt="" /></a>
+                <p>Posted: {{blog.created}}</p>
 
-								<h3>Author: {{blog.user.username}}</h3>
-								<p> {{blog.description}}</p>
+                <h3>Author: {{blog.user.username}}</h3>
+                <h3> {{blog.description}}</h3>
 
-							</section>
 
-					</div>
-					{%endfor%}
-				</div>
+
+                <a href="{% url 'update_blog' blog.id %}" style="width: 25vw;"><i class="fas fa-edit"></i></a>
+                <a href="{% url 'delete_blog' blog.id %}"><i class="fas fa-trash-alt"></i></a>
+                <br>
+                <a href="{% url 'add_blog' %}" class="button primary small ">More</a>
+              </section>
+
+          </div>
+          {%endfor%}
+        </div>
 {%endblock%}
 
 
