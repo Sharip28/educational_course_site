@@ -19,6 +19,7 @@ class StudyPageView(ListView):
     model = Week
     template_name = 'study.html'
     context_object_name = 'weeks'
+    paginate_by = 2
 
     def get_template_names(self):
         template_name = super(StudyPageView, self).get_template_names()
