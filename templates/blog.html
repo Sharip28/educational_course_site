@@ -1,10 +1,8 @@
-
-
 {%extends 'base.html'%}
 {% load static%}
 {%block content%}
 <a href="{% url 'add_blog' %}" class="button primary">Add post </a>
-<a href="#" class="button primary">New posts </a>
+<a href="{% url 'blog' %}?filter=new_blog" class="button primary">New posts </a>
 
 
 
@@ -30,11 +28,11 @@
 								<p>Posted: {{blog.created}}</p>
 
 								<h3>Author: {{blog.user.username}}</h3>
-								<p> {{blog.description}}</p>
+								<p> {{blog.description|truncatewords:10}}</p>
 								<a href="{% url 'update_blog' blog.id %}" style="width: 25vw;"><i class="fas fa-edit"></i></a>
                                 <a href="{% url 'delete_blog' blog.id %}"><i class="fas fa-trash-alt"></i></a>
                                 <br>
-                                <a href="{% url 'add_blog' %}" class="button primary small ">More</a>
+                                <a href="{% url 'detail' blog.id %}" class="button primary small ">More</a>
 							</section>
 
 					</div>

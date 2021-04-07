@@ -19,11 +19,25 @@ class BlogPageView(ListView):
     template_name = 'blog.html'
     context_object_name = 'blogs'
 
-    # def get_context_data(self, **kwargs):
-    #     context = super().get_context_data(**kwargs)
-    #     image = self.get_object().get_image
-    #     context['images'] = self.get_object().images.exclude(id=image.id)
-    #     return context
+    def get_template_names(self):
+        template_name = super(BlogPageView, self).get_template_names()
+        filter = self.request.GET.get('filter')
+
+        if filter:
+            template_name = 'new_blog.html'
+        return template_name
+
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context = super().get_context_data(**kwargs)
+        filter = self.request.GET.get('filter')
+
+        if filter:
+            start_date = timezone.now() - timedelta(hours=5)
+            context['blogs'] = Blog.objects.filter(created__gte=start_date)
+
+        else:
+            context['blogs'] = Blog.objects.all()
+        return context
 
 def add_blog(request):
     ImageFormSet = modelformset_factory(Image, form=ImageForm, max_num=5)
@@ -68,3 +82,24 @@ class DeleteBlogView(DeleteView):
         self.object.delete()
         messages.add_message(request, messages.SUCCESS, 'Successfully deleted!')
         return HttpResponseRedirect(success_url)
+
+class BlogDetailView(DetailView):
+    model = Blog
+    template_name = 'blog_detail.html'
+    context_object_name = 'blog'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        image = self.get_object().get_image
+        context['images'] = self.get_object().images.exclude(id=image.id)
+        return context
+# class RecipeDetailView(DetailView):
+#     model = Recipe
+#     template_name = 'recipe-detail.html'
+#     context_object_name = 'recipe'
+#
+#     def get_context_data(self, **kwargs):
+#         context = super().get_context_data(**kwargs)
+#         image = self.get_object().get_image
+#         context['images'] = self.get_object().images.exclude(id=image.id)
+#         return context

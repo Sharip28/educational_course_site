@@ -1,0 +1,23 @@
+{%extends 'base.html'%}
+{% load static%}
+{%block content%}
+    <section>
+        <header class="main">
+            <h1>{{ blog.title }}</h1>
+        </header>
+
+        <span class="image main"><img src="{{ blog.get_image }}" style="width: auto; height: auto;" alt="" /></span>
+
+        <p>Posted: {{ blog.created }}</p>
+        <p>Author: {{ blog.user.username }}</p>
+
+        <hr class="major" />
+        {% for image in images %}
+        <img src="{{ image }}" style="width: 500px; height: 500px;"class="img-thumbnail" alt="...">
+        {% endfor %}
+        <h2>{{ recipe.description|truncatewords:10 }}</h2>
+
+        <a href="{% url 'update_blog' blog.id %}" style="width: 25vw;"><i class="fas fa-edit"></i></a>
+        <a href="{% url 'delete_blog' blog.id %}"><i class="fas fa-trash-alt"></i></a>
+    </section>
+{%endblock%}
