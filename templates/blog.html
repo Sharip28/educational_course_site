@@ -5,7 +5,7 @@
 {%block content%}
 <a href="{% url 'add_blog' %}" class="button primary">Add post </a>
 <a href="{% url 'blog' %}?filter=new_blog" class="button primary">New posts </a>
-<a href="#" class="button primary ">Chosen</a>
+<a href="{% url 'blog_favorite_list' %}" class="button primary ">Chosen</a>
 
 <section id="search" class="alt">
 			<form method="get" action="{% url 'blog' %}">
@@ -50,7 +50,7 @@
                                 <a href="{% url 'delete_blog' blog.id %}"><i class="fas fa-trash-alt"></i></a>
                                 <br>
                                 <a href="{% url 'detail' blog.id %}" class="button primary small ">More</a>
-                                <a href="#" class="button primary small ">Add to chosen</a>
+<!--                                <a href="#" class="button primary small ">Add to chosen</a>-->
 
 							</section>
 

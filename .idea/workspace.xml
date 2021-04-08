@@ -2,12 +2,64 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57e5ee8a-78ab-49f2-92be-7a7382f09cc4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/blog/permissions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/blogs/question.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/blogs/question_9NBTQDi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/blogs/question_DYZcsEn.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/blogs/question_NCbIbRn.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/blog_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/new_blog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/searchblog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/cart/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/cart/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/cart/cart.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/cart/context_processor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/cart/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/cart/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/cart/templatetags/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/cart/templatetags/cart_tag.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/cart/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/cart/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/cart/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/django_shopping_cart-0.1.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/django_shopping_cart-0.1.dist-info/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/django_shopping_cart-0.1.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/django_shopping_cart-0.1.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/django_shopping_cart-0.1.dist-info/REQUESTED" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/django_shopping_cart-0.1.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/django_shopping_cart-0.1.dist-info/top_level.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/migrations/0002_auto_20210406_0644.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/migrations/0001_initial.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/cart/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hackathon/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hackathon/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/hackathon/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/migrations/0002_auto_20210406_0644.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/migrations/0003_auto_20210406_0645.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/account/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/update_blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/update_blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trello/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/form/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trello/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/form/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trello/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/form/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trello/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trello/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/form/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trello/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trello/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/form/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trello/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/form/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

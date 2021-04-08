@@ -5,12 +5,12 @@ from account.models import User
 
 
 class Week(models.Model):
-    slug = models.SlugField(primary_key=True,max_length=150)
+    slug = models.SlugField(primary_key=True,max_length=150,blank=True)
 
-    name = models.CharField(max_length=150)
+    name = models.CharField(max_length=150,blank=True,null=True)
     description = models.CharField(max_length=150,blank=True)
-    kpi = models.TextField(blank=True)
-    schedule = models.TextField(blank=True)
+    kpi = models.TextField(blank=True,null=True)
+    schedule = models.TextField(blank=True,null=True)
     user = models.ForeignKey(User,on_delete=models.CASCADE,related_name='weeks')
     class Meta:
         ordering =['name']

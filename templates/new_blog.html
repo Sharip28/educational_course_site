@@ -1,11 +1,12 @@
 {%extends 'base.html'%}
 {% load static%}
 {%block content%}
-<h1>New Posts</h1>
+
  <section id="search" class="alt">
 			<form method="get" action="{% url 'blog' %}">
 				<input type="text" name="q" id="query" placeholder="Search" />
 			</form>
+ <h1>New Posts</h1>
 		</section>
 
 

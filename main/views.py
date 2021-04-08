@@ -10,11 +10,6 @@ from main.models import Week
 def index(request):
     return render(request, 'index.html')
 
-
-# def study(request):
-#     weeks = Week.objects.all()
-#     return render(request,'study.html',context={'weeks':weeks})
-
 class StudyPageView(ListView):
     model = Week
     template_name = 'study.html'
