@@ -1,0 +1,41 @@
+{%extends 'base.html'%}
+{% load static%}
+{%block content%}
+
+<section id="search" class="alt">
+    <form method="get" action="{% url 'blog' %}">
+        <input type="text" name="q" id="query" placeholder="Search" />
+    </form>
+</section>
+<h1>Search results</h1>
+    <div id="main" class="wrapper style1">
+     {%for blog in blogs %}
+					<div class="container">
+						<header class="major">
+							<h2>{{blog.title}}</h2>
+						</header>
+						<!-- Content -->
+							<section id="content">
+								<a href="#" style="margin: 0 auto; width: 70vw;" class="image fit"><img src="{{blog.get_image}}" class="blog-img" alt="" /></a>
+                            <br>
+
+                                <p>Posted: {{blog.created}}</p>
+								<p>Author: {{blog.user.username}}</p>
+                                  <pre><code>
+                                        {{blog.code}}
+                                    </code></pre>
+                                   <h3>
+                                       {{blog.detail}}
+                                   </h3>
+
+
+								<a href="{% url 'update_blog' blog.id %}" style="width: 25vw;"><i class="fas fa-edit"></i></a>
+                                <a href="{% url 'delete_blog' blog.id %}"><i class="fas fa-trash-alt"></i></a>
+                                <br>
+                                <a href="{% url 'add_blog' %}" class="button primary small ">More</a>
+							</section>
+
+					</div>
+					{%endfor%}
+    </div>
+{%endblock%}

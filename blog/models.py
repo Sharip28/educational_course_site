@@ -5,8 +5,10 @@ from account.models import User
 
 
 class Blog(models.Model):
-    title = models.CharField(max_length=150)
-    description = models.TextField()
+    title = models.CharField(max_length=150,blank=True)
+    code = models.TextField(blank=True)
+    detail = models.TextField(blank=True)
+
     user = models.ForeignKey(User,on_delete=models.CASCADE,related_name='blogs')
     created = models.DateTimeField()
 
@@ -15,14 +17,17 @@ class Blog(models.Model):
 
     @property
     def get_image(self):
-        return self.images.first().image.url
+        return self.images.first()
 
     def get_absolute_url(self):
         from django.urls import reverse
-        return reverse('blog', )
+        return reverse('detail', kwargs={'pk': self.pk})
 
 
 
 class Image(models.Model):
-    image = models.ImageField(upload_to='blogs')
+    image = models.ImageField(upload_to='blogs',blank=True)
     blog = models.ForeignKey(Blog,on_delete=models.CASCADE,related_name='images')
+
+    def __str__(self):
+        return self.image.url

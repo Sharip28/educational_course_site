@@ -4,7 +4,14 @@
 {% load static%}
 {%block content%}
 <a href="{% url 'add_blog' %}" class="button primary">Add post </a>
-<a href="#" class="button primary">New posts </a>
+<a href="{% url 'blog' %}?filter=new_blog" class="button primary">New posts </a>
+<a href="#" class="button primary ">Chosen</a>
+
+<section id="search" class="alt">
+			<form method="get" action="{% url 'blog' %}">
+				<input type="text" name="q" id="query" placeholder="Search" />
+			</form>
+		</section>
 
 
 
@@ -22,19 +29,29 @@
 					{%for blog in blogs %}
 					<div class="container">
 						<header class="major">
-							<h2>{{blog}}</h2>
+							<h2>{{blog.title}}</h2>
 						</header>
 						<!-- Content -->
 							<section id="content">
-								<a href="#" style="margin: 0 auto; width: 30vw;" class="image fit"><img src="{{blog.get_image}}" class="blog-img" alt="" /></a>
-								<p>Posted: {{blog.created}}</p>
+								<a href="#" style="margin: 0 auto; width: 70vw;" class="image fit"><img src="{{blog.get_image}}" class="blog-img" alt="" /></a>
+                            <br>
 
-								<h3>Author: {{blog.user.username}}</h3>
-								<p> {{blog.description}}</p>
+                                <p>Posted: {{blog.created}}</p>
+								<p>Author: {{blog.user.username}}</p>
+                                  <pre><code>
+                                        {{blog.code}}
+                                    </code></pre>
+                                   <h3>
+                                       {{blog.detail|truncatewords:10}}
+                                   </h3>
+
+
 								<a href="{% url 'update_blog' blog.id %}" style="width: 25vw;"><i class="fas fa-edit"></i></a>
                                 <a href="{% url 'delete_blog' blog.id %}"><i class="fas fa-trash-alt"></i></a>
                                 <br>
-                                <a href="{% url 'add_blog' %}" class="button primary small ">More</a>
+                                <a href="{% url 'detail' blog.id %}" class="button primary small ">More</a>
+                                <a href="#" class="button primary small ">Add to chosen</a>
+
 							</section>
 
 					</div>

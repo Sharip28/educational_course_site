@@ -8,7 +8,7 @@ from main.models import Week
 
 
 def index(request):
-    return render(request,'index.html')
+    return render(request, 'index.html')
 
 
 # def study(request):
@@ -24,7 +24,7 @@ class StudyPageView(ListView):
     def get_template_names(self):
         template_name = super(StudyPageView, self).get_template_names()
         search = self.request.GET.get('q')
-        if search :
+        if search:
             template_name = 'search.html'
         return template_name
 
@@ -32,20 +32,13 @@ class StudyPageView(ListView):
         context = super().get_context_data(**kwargs)
         search = self.request.GET.get('q')
         if search:
-            context['weeks'] = Week.objects.filter(Q(name__icontains=search)|Q(description__icontains=search))
+            context['weeks'] = Week.objects.filter(Q(name__icontains=search) | Q(description__icontains=search))
         else:
             context['weeks'] = Week.objects.all()
         return context
 
 
-
-
-
-
-def kpi(request,slug):
+def kpi(request, slug):
     weeks = Week.objects.get(slug=slug)
 
-    return render(request,'kpi.html',context={'weeks':weeks})
-
-
-
+    return render(request, 'kpi.html', context={'weeks': weeks})
