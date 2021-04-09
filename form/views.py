@@ -15,4 +15,4 @@ class ApplicationView(SuccessMessageMixin,CreateView):
     template_name ='form/form.html'
     form_class = ApplicationForm
     success_url = reverse_lazy('home')
-    success_message = 'Congratulations,you are successfully sended your application!'
+    success_message = 'Congratulations,you successfully sended your application!'
