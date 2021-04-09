@@ -39,5 +39,6 @@ class RegistrationForm(forms.ModelForm):
 
     def save(self,commit=True):
         user = User.objects.create_user(**self.cleaned_data)
+        # send_activation_mail(user)
         return user
 

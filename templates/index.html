@@ -1,7 +1,11 @@
 {%extends 'base.html'%}
 {% load static%}
 {%block content%}
-				<div id="main" class="wrapper style1">
+
+				<section id="banner">
+
+					<div class="content">
+								<div id="main" class="wrapper style1">
                      {% if messages %}
                         <ul class="messages">
                             {% for message in messages %}
@@ -11,9 +15,6 @@
                             {% endfor %}
                             </ul>
             {% endif %}
-				<section id="banner">
-
-					<div class="content">
 						<header>
 							<h2>Первый IT-Hub в Кыргызстане</h2>
 							<h3>Мы обучаем IT и digital профессиям. Разрабатываем сайты и приложения.<br />

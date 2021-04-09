@@ -6,7 +6,7 @@ class BlogForm(forms.ModelForm):
     created = forms.DateTimeField(initial=datetime.now().strftime('%Y-%m-%d %H:%M:%S'), required=False)
     class Meta:
         model = Blog
-        exclude = ('user','favorites')
+        exclude = ('user','favorites','likes')
 
 class ImageForm(forms.ModelForm):
     class Meta:
